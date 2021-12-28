@@ -3,11 +3,12 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Contacts Table View Controller-->
         <scene sceneID="1xL-lS-12a">
             <objects>
                 <tableViewController id="vee-h9-Jt7" customClass="ContactsTableViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,13 +17,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsTableViewController" id="kkl-uy-YkM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsTableViewController" editingAccessoryType="disclosureIndicator" textLabel="jcU-tS-yMY" detailTextLabel="Pr6-RH-ObB" style="IBUITableViewCellStyleSubtitle" id="kkl-uy-YkM">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kkl-uy-YkM" id="XBV-qm-Jsx">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jcU-tS-yMY">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pr6-RH-ObB">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="yWq-bT-Ajh" kind="show" id="Gut-aG-xI0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -30,12 +50,28 @@
                             <outlet property="delegate" destination="vee-h9-Jt7" id="qkR-Sq-6Yo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Jjr-Dm-skP"/>
+                    <tabBarItem key="tabBarItem" image="person.fill" catalog="system" id="Jjr-Dm-skP"/>
                     <navigationItem key="navigationItem" id="WhR-Yd-e6M"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEc-n8-jV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1449" y="-109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tqQ-Xa-cqp">
+            <objects>
+                <viewController id="yWq-bT-Ajh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eft-BZ-d6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N40-8f-3ac"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="46H-PZ-KbE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l5q-Uf-9bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261" y="-109"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xGS-Sh-dET">
@@ -97,7 +133,7 @@
                             <outlet property="delegate" destination="9ZV-iR-mYW" id="QI4-8H-aYL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="B7y-q4-Jkf"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person.crop.circle" catalog="system" id="B7y-q4-Jkf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dof-2h-RGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,6 +141,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
