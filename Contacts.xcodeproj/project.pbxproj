@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		122765CC277C4BC100D35E28 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122765CB277C4BC100D35E28 /* TabbarViewController.swift */; };
+		122765CC277C4BC100D35E28 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122765CB277C4BC100D35E28 /* MainTabbarViewController.swift */; };
+		122765CE277CB7D900D35E28 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122765CD277CB7D900D35E28 /* ContactsTableViewController.swift */; };
+		122765D0277CB93500D35E28 /* SectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122765CF277CB93500D35E28 /* SectionsTableViewController.swift */; };
+		122765D2277CBF3300D35E28 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122765D1277CBF3300D35E28 /* PersonDetailsViewController.swift */; };
 		12F1F579277B28DC002EC29A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F578277B28DC002EC29A /* AppDelegate.swift */; };
 		12F1F57B277B28DC002EC29A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F57A277B28DC002EC29A /* SceneDelegate.swift */; };
 		12F1F580277B28DC002EC29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F57E277B28DC002EC29A /* Main.storyboard */; };
 		12F1F582277B28DE002EC29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F581277B28DE002EC29A /* Assets.xcassets */; };
 		12F1F585277B28DE002EC29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F583277B28DE002EC29A /* LaunchScreen.storyboard */; };
-		12F1F58D277B29C4002EC29A /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F58C277B29C4002EC29A /* ContactsTableViewController.swift */; };
 		12F1F594277B2EF9002EC29A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F593277B2EF9002EC29A /* Person.swift */; };
 		12F1F597277B3176002EC29A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F596277B3176002EC29A /* DataManager.swift */; };
-		12F1F599277B3ABB002EC29A /* SectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F598277B3ABB002EC29A /* SectionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		122765CB277C4BC100D35E28 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		122765CB277C4BC100D35E28 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		122765CD277CB7D900D35E28 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		122765CF277CB93500D35E28 /* SectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewController.swift; sourceTree = "<group>"; };
+		122765D1277CBF3300D35E28 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		12F1F575277B28DC002EC29A /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F1F578277B28DC002EC29A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F1F57A277B28DC002EC29A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +32,8 @@
 		12F1F581277B28DE002EC29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12F1F584277B28DE002EC29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12F1F586277B28DE002EC29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12F1F58C277B29C4002EC29A /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		12F1F593277B2EF9002EC29A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		12F1F596277B3176002EC29A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		12F1F598277B3ABB002EC29A /* SectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,10 @@
 		12F1F590277B2E9E002EC29A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				12F1F58C277B29C4002EC29A /* ContactsTableViewController.swift */,
-				12F1F598277B3ABB002EC29A /* SectionsTableViewController.swift */,
-				122765CB277C4BC100D35E28 /* TabbarViewController.swift */,
+				122765CB277C4BC100D35E28 /* MainTabbarViewController.swift */,
+				122765CD277CB7D900D35E28 /* ContactsTableViewController.swift */,
+				122765CF277CB93500D35E28 /* SectionsTableViewController.swift */,
+				122765D1277CBF3300D35E28 /* PersonDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -198,13 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122765D2277CBF3300D35E28 /* PersonDetailsViewController.swift in Sources */,
 				12F1F579277B28DC002EC29A /* AppDelegate.swift in Sources */,
-				12F1F599277B3ABB002EC29A /* SectionsTableViewController.swift in Sources */,
-				122765CC277C4BC100D35E28 /* TabbarViewController.swift in Sources */,
+				122765CC277C4BC100D35E28 /* MainTabbarViewController.swift in Sources */,
+				122765D0277CB93500D35E28 /* SectionsTableViewController.swift in Sources */,
+				122765CE277CB7D900D35E28 /* ContactsTableViewController.swift in Sources */,
 				12F1F597277B3176002EC29A /* DataManager.swift in Sources */,
 				12F1F57B277B28DC002EC29A /* SceneDelegate.swift in Sources */,
 				12F1F594277B2EF9002EC29A /* Person.swift in Sources */,
-				12F1F58D277B29C4002EC29A /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

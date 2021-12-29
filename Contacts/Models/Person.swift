@@ -23,7 +23,7 @@ extension Person {
     static func getContact() -> [Person] {
         var persons: [Person] = []
         
-        for _ in 1...10 {
+        for _ in 0...DataManager.shared.names.count {
             let person = Person(name: "\(DataManager.shared.names.randomElement() ?? "")",
                                 surname: "\(DataManager.shared.surnames.randomElement() ?? "")",
                                 phone: "\(DataManager.shared.phones.randomElement() ?? "")",
