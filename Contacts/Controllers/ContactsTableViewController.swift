@@ -44,20 +44,3 @@ class ContactsTableViewController: UITableViewController {
     
 
 }
-
-//extension ContactsTableViewController {
-//    private func chooseController() {
-//            guard let viewControllers = viewControllers else { return }
-//            for controller in viewControllers {
-//                if let personVC = controller as? PersonsListViewController {
-//                    personVC.persons = persons
-//                } else {
-//                    if let contactVC = controller as? ContactListViewController {
-//                        contactVC.persons = persons
-//                    }
-//                }
-//                
-//            }
-//        }
-//
-//}

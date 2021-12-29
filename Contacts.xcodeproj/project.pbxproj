@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122765CC277C4BC100D35E28 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122765CB277C4BC100D35E28 /* TabbarViewController.swift */; };
 		12F1F579277B28DC002EC29A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F578277B28DC002EC29A /* AppDelegate.swift */; };
 		12F1F57B277B28DC002EC29A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F1F57A277B28DC002EC29A /* SceneDelegate.swift */; };
 		12F1F580277B28DC002EC29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F1F57E277B28DC002EC29A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122765CB277C4BC100D35E28 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		12F1F575277B28DC002EC29A /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F1F578277B28DC002EC29A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F1F57A277B28DC002EC29A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				12F1F58C277B29C4002EC29A /* ContactsTableViewController.swift */,
 				12F1F598277B3ABB002EC29A /* SectionsTableViewController.swift */,
+				122765CB277C4BC100D35E28 /* TabbarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			files = (
 				12F1F579277B28DC002EC29A /* AppDelegate.swift in Sources */,
 				12F1F599277B3ABB002EC29A /* SectionsTableViewController.swift in Sources */,
+				122765CC277C4BC100D35E28 /* TabbarViewController.swift in Sources */,
 				12F1F597277B3176002EC29A /* DataManager.swift in Sources */,
 				12F1F57B277B28DC002EC29A /* SceneDelegate.swift in Sources */,
 				12F1F594277B2EF9002EC29A /* Person.swift in Sources */,
