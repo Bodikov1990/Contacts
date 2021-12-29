@@ -59,7 +59,7 @@ class ContactsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        let currentTrack = contacts.remove(at: indexPath.row)
+        _ = contacts.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .left)
         
     }

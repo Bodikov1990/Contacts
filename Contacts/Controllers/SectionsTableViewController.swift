@@ -10,6 +10,7 @@ import UIKit
 class SectionsTableViewController: UITableViewController {
 
     var contacts: [Person]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Persons List"
@@ -45,8 +46,5 @@ class SectionsTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-       
-    }
 
 }
