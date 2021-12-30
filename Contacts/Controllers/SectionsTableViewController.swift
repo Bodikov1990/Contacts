@@ -27,7 +27,7 @@ class SectionsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        2
     }
 
     
@@ -35,16 +35,18 @@ class SectionsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SectionsTableViewController", for: indexPath)
         let person = contacts[indexPath.row]
         let imagePhone = UIImage(systemName: "phone")
+        let email = UIImage(systemName: "at")
         
         var content = cell.defaultContentConfiguration()
-        content.image = imagePhone
-        content.text = "phone: \(person.phone)"
-        content.secondaryText = "e-mail: \(person.email)"
+        switch indexPath.row {
+        case 0: content.image = imagePhone
+            content.text = person.phone
+        default:
+            content.image = email
+            content.secondaryText = "e-mail: \(person.email)"
+        }
         
         cell.contentConfiguration = content
-        
-        
-
         return cell
     }
     
