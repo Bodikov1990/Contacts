@@ -34,8 +34,10 @@ class SectionsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SectionsTableViewController", for: indexPath)
         let person = contacts[indexPath.row]
+        let imagePhone = UIImage(systemName: "phone")
         
         var content = cell.defaultContentConfiguration()
+        content.image = imagePhone
         content.text = "phone: \(person.phone)"
         content.secondaryText = "e-mail: \(person.email)"
         
@@ -46,5 +48,8 @@ class SectionsTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
 }

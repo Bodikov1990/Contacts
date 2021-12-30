@@ -39,6 +39,7 @@ class ContactsTableViewController: UITableViewController {
         content.text = person.name
         content.secondaryText = person.surname
         
+        
         cell.contentConfiguration = content
 
         return cell
@@ -60,8 +61,12 @@ class ContactsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         _ = contacts.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .left)
+        tableView.deleteRows(at: [indexPath], with: .fade)
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
